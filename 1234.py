@@ -1,1 +1,1 @@
-print('guwefcjkweghd')  # велвкенлкенлк
+print('guwefcjkweghd')  # велвкенлкенлкывкрврвв
