@@ -1,3 +1,4 @@
+
 # Напишите функцию flatten_and_sort, которая принимает двумерый массив (список списков) array,
 # и возвращает "плоский" список со всеми числами в порядке возрастания result_list
 # Например (Ввод --> Вывод) :
@@ -6,7 +7,9 @@
 
 
 def flatten_and_sort(array):
-    # Здесь нужно написать код
+    result_list = [result_list1 for float_list in array
+                   for result_list1 in float_list]  # Получаем плоский список
+    result_list.sort()  # Сортируем список в порядке возрастания
     return result_list
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

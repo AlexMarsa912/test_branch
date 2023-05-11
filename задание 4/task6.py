@@ -4,7 +4,10 @@
 # (1, 2, 3, 4, 5, 6, 7, 8, 9, 0)  => "(123) 456-7890"
 
 def create_phone_number(num_tuple):
-    # Здесь нужно написать код
+    num_str = str(num_tuple)  # Из кортежа делаем строку
+    new_num_str = num_str.replace(", ", "")  # Удаляем ненужные символы
+    str_phone = str('(' + new_num_str[1:4] + ') ' + new_num_str[4:7] + '-' + new_num_str[-5:-1])
+    # Через срезы выводим номер телефона
     return str_phone
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
