@@ -26,7 +26,7 @@ def scrabble(word):
         15: 'ъ'
     }
     # С помощью метода items() обращаемся к ключам и значениям
-    points_letter = [key fo r letter in word for key, value in points_dict.items() if letter in value]
+    points_letter = [key for letter in word for key, value in points_dict.items() if letter in value]
     points = sum(points_letter)
     return points
 
