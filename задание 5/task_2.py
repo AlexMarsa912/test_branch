@@ -7,9 +7,7 @@
 
 
 def repeats(our_str):
-    new_str = ""
-    for i in our_str:
-        new_str += i + "_" + str(new_str.count(i) + 1)
+    # Здесь нужно написать код
     return new_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

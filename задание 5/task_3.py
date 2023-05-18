@@ -19,13 +19,7 @@
 
 
 def everything_for_your_cat(cats_data):
-    our_str = {}  # Пустой словарь
-    for cat in cats_data:
-        temp = cat[0] + ', ' + str(cat[1])
-        #  Методом словарей setdefault() и методом join() объединим элементы списков и кортежей
-        #  с необходимыми разделителями:
-        our_str.setdefault(cat[2:], []).append(temp)
-    our_str = ''.join(f'{p[0]} {p[1]}: {"; ".join(j)}\n' for p, j in our_str.items())
+    # Здесь нужно написать код
     return our_str
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ

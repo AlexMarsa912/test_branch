@@ -14,22 +14,7 @@
 
 
 def scrabble(word):
-    # Создаем словарь points_dict с ключом ОЧКИ значением БУКВЫ
-    points_dict = {
-        1: 'авеёинорст',
-        2: 'дклмпу',
-        3: 'бгья',
-        4: 'йы',
-        5: 'жзхцч',
-        8: 'фшэю',
-        10: 'щ',
-        15: 'ъ'
-    }
-    # С помощью метода items() обращаемся к ключам и значениям
-    points_letter = [key for letter in word for key, value in points_dict.items() if letter in value]
-    points = sum(points_letter)
-    print(points)
-
+    # Здесь нужно написать код
     return points
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
