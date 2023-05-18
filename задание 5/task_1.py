@@ -7,6 +7,8 @@
 
 
 def letter_stat(our_str):
+    our_str_1 = [char for char in our_str]  # Делаем список по буквам
+    letters_dict = {i: our_str_1.count(i) for i in our_str_1}  # Генерируем словарь из списка
     # Здесь нужно написать код
     return letters_dict
 
