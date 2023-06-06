@@ -3,6 +3,18 @@
 # Покупки (т.е. несколько подряд идущих цен) разделены пустой строкой
 # Нужно найти сумму трёх самых дорогих покупок, которые запишутся в переменную three_most_expensive_purchases
 
-# Здесь пишем код
+list_purchase = []
+purchase = 0
+with open('test_file/task_3.txt', 'r') as file:
+    for line in file:
+        if line != '\n':
+            purchase = purchase + int(line)
+        else:
+            list_purchase.append(purchase)
+            purchase = 0
+list_purchase.sort(reverse=True)
+three_most_expensive_purchases = sum(list_purchase[:3])
+
 
 assert three_most_expensive_purchases == 202346
+
